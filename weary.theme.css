@@ -2,7 +2,7 @@
  * @name Cool
  * @author Etho
  * @version 1
- * @description Highly customizable theme for BetterDiscord.
+ * @description Theme :)
  */
 
 :root {
@@ -52,6 +52,8 @@ body {
 }
 
 .base-3dtUhz {
+    /* margin: 16px;
+    margin-top: 0px; */
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 12px;
@@ -63,6 +65,7 @@ body {
 }
   
 .wordmarkWindows-1v0lYD {
+    color: transparent;
     color: #fff; 
 }
   
@@ -106,7 +109,7 @@ textarea,
 }
 
 .expandedFolderBackground-1cujaW {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .guildSeparator-33mFX6 {
@@ -180,6 +183,10 @@ textarea,
 }
 
 /* Server sidebar */
+.containerDefault-3tr_sE {
+    margin-left: 2px;
+}
+
 .unread-2lAfLh {
     display: none;
 }
@@ -213,6 +220,8 @@ textarea,
     transition: all 0.15s ease-in-out;
 }
 
+.wrapper-2jXpOf.modeLocked-25wLHj .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz,
+.wrapper-2jXpOf.modeLocked-25wLHj .content-1x5b-n .mainContent-u_9PKf .channelName-2YrOjO,
 .wrapper-2jXpOf.modeMuted-onO3r- .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz,
 .wrapper-2jXpOf.modeMuted-onO3r- .content-1x5b-n .mainContent-u_9PKf .name-23GUGE {
   color: var(--channel-muted);
@@ -275,6 +284,10 @@ textarea,
 }
 
 [aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="My Account-tab"].item-PXvHYJ:before {
+    background-image: url(https://clearvision.gitlab.io/icons/person.svg);
+}
+
+[aria-label=USER_SETTINGS] .sidebar-CFHs9e [aria-controls="Profile Customization-tab"].item-PXvHYJ:before {
     background-image: url(https://clearvision.gitlab.io/icons/person.svg);
 }
 
@@ -398,4 +411,103 @@ textarea,
 
 .focused-3afm-j {
     background: var(--main-color);
+}
+
+.mediaBarProgress-1xaPtl, .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl::before, .mediaBarProgress-1xaPtl::after {
+    background: rgb(0, 200, 255);
+}
+
+.bubble-3qRl2J {
+    background: rgb(0, 225, 255);
+}
+
+
+/* .message-2qnXI6:not(.groupStart-23k01U),
+.message-2qnXI6.compact-T3H92H {
+    border-radius: 0px 0px 6px 6px;
+}
+
+.message-2qnXI6.groupStart-23k01U,
+.message-2qnXI6.compact-T3H92H {
+    border-radius: 6px 6px 0px 0px;
+} */
+
+.buttons-cl5qTG.container-3npvBV {
+    top: 8px;
+}
+
+.message-2qnXI6.groupStart-23k01U
+.message-2qnXI6.compact-T3H92H {
+    border-radius: 6px;
+}
+
+.wrapper-2a6GCs {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px; 
+}
+  
+.cozy-3raOZG.wrapper-2a6GCs,
+.compact-T3H92H.wrapper-2a6GCs {
+    margin-left: 64px;
+    margin-right: 24px;
+    padding-top: 6px !important;
+    padding-left: 8px !important;
+    padding-bottom: 6px !important;
+}
+  
+.avatar-1BDn8e {
+    top: 0;
+    left: -52px; 
+    border-radius: 4px;
+}
+  
+.message-2qnXI6.selected-2P5D_Z,
+.mouse-mode.full-motion .message-2qnXI6:hover {
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
+    left: -75px;
+    top: 8px;
+}
+  
+.compact-T3H92H .timestamp-3ZCmNB,
+.cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
+    color: rgb(255, 255, 255); 
+}
+
+.container-2fRDfG {
+    background-color: transparent;
+    border-radius: var(--textarea-radius) var(--textarea-radius) 0 0;
+    border-bottom: 1px solid var(--background-modifier-accent); 
+}
+  
+.repliedMessage-VokQwo:before {
+    transform: translateX(42px); 
+}
+  
+.replyAvatar-1K9Wmr,
+.repliedMessage-VokQwo > .replyBadge-r1su3o {
+    margin-left: 42px; 
+}
+  
+.compact-T3H92H .repliedMessage-VokQwo > .replyBadge-r1su3o {
+    margin-left: 0; 
+}
+  
+.ephemeral-1PsL1r,
+.replying-1x3H0T,
+.backgroundFlash-24qWLN[style*="background-color: rgba(114, 137, 218, 0.2)"] .wrapper-2a6GCs {
+    border-color: var(--mention-alt) !important;
+    box-shadow: inset 0px 0px 6px 1px var(--mention-alt), 0px 0px 9px 2px var(--mention-alt); 
+}
+
+.ephemeral-1PsL1r:before,
+.replying-1x3H0T:before,
+.backgroundFlash-24qWLN[style*="background-color: rgba(114, 137, 218, 0.2)"] .wrapper-2a6GCs:before {
+      display: none; 
+}
+  
+.ephemeralMessage-1fEWtQ a {
+    color: var(--mention-alt); 
 }
