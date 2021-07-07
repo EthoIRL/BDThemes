@@ -421,29 +421,25 @@ textarea,
     background: rgb(0, 225, 255);
 }
 
-
-/* .message-2qnXI6:not(.groupStart-23k01U),
-.message-2qnXI6.compact-T3H92H {
-    border-radius: 0px 0px 6px 6px;
-}
-
-.message-2qnXI6.groupStart-23k01U,
-.message-2qnXI6.compact-T3H92H {
+.message-2qnXI6.groupStart-23k01U {
     border-radius: 6px 6px 0px 0px;
-} */
-
-.buttons-cl5qTG.container-3npvBV {
-    top: 8px;
 }
 
-.message-2qnXI6.groupStart-23k01U
-.message-2qnXI6.compact-T3H92H {
-    border-radius: 6px;
+.wrapper-2aW0bm {
+    border-radius: 24px;
 }
 
-.wrapper-2a6GCs {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 6px; 
+.wrapper-2a6GCs:not(.mentioned-xhSam7) {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper-2a6GCs.mentioned-xhSam7 {
+    border-radius: 0px 6px 6px 0px; 
+}
+
+.message-2qnXI6.selected-2P5D_Z:not(.mentioned-xhSam7),
+.mouse-mode.full-motion .message-2qnXI6:hover:not(.mentioned-xhSam7) {
+    background-color: rgba(0, 0, 0, 0.4); 
 }
   
 .cozy-3raOZG.wrapper-2a6GCs,
@@ -456,14 +452,8 @@ textarea,
 }
   
 .avatar-1BDn8e {
-    top: 0;
     left: -52px; 
     border-radius: 4px;
-}
-  
-.message-2qnXI6.selected-2P5D_Z,
-.mouse-mode.full-motion .message-2qnXI6:hover {
-    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
@@ -489,25 +479,4 @@ textarea,
 .replyAvatar-1K9Wmr,
 .repliedMessage-VokQwo > .replyBadge-r1su3o {
     margin-left: 42px; 
-}
-  
-.compact-T3H92H .repliedMessage-VokQwo > .replyBadge-r1su3o {
-    margin-left: 0; 
-}
-  
-.ephemeral-1PsL1r,
-.replying-1x3H0T,
-.backgroundFlash-24qWLN[style*="background-color: rgba(114, 137, 218, 0.2)"] .wrapper-2a6GCs {
-    border-color: var(--mention-alt) !important;
-    box-shadow: inset 0px 0px 6px 1px var(--mention-alt), 0px 0px 9px 2px var(--mention-alt); 
-}
-
-.ephemeral-1PsL1r:before,
-.replying-1x3H0T:before,
-.backgroundFlash-24qWLN[style*="background-color: rgba(114, 137, 218, 0.2)"] .wrapper-2a6GCs:before {
-      display: none; 
-}
-  
-.ephemeralMessage-1fEWtQ a {
-    color: var(--mention-alt); 
 }
