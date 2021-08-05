@@ -165,7 +165,6 @@ textarea,
             animation: cv-channel-select 0.3s ease-in-out;
 }
 
-
 .avatar-3uk_u9, .content-3QAtGj {
     margin-left: -3px;
 }
@@ -178,7 +177,7 @@ textarea,
     margin-left: 8px;
 }
 
-#private-channels-1, #private-channels-2, [mask="url(#7c2cbf3c-117f-4f6e-9c03-41a39e1528af)"], [aria-label="Send a gift"] {
+#private-channels-2, [aria-label="Send a gift"] {
     display: none;
 }
 
@@ -422,7 +421,7 @@ textarea,
 }
 
 .message-2qnXI6.groupStart-23k01U {
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 0px 6px 0px 0px;
 }
 
 .wrapper-2aW0bm {
@@ -430,11 +429,15 @@ textarea,
 }
 
 .wrapper-2a6GCs:not(.mentioned-xhSam7) {
-    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, rgb(0, 200, 255) 3px,rgb(0, 182, 245) 3px, rgb(0, 90, 244) 3px, rgba(0, 0, 0, 0.3) 0%);
 }
 
 .wrapper-2a6GCs.mentioned-xhSam7 {
-    border-radius: 0px 6px 6px 0px; 
+    border-radius: 0px 6px 6px 0px;
+}
+
+.wrapper-2a6GCs.mentioned-xhSam7::before {
+    width: 3px;
 }
 
 .message-2qnXI6.selected-2P5D_Z:not(.mentioned-xhSam7),
@@ -446,9 +449,9 @@ textarea,
 .compact-T3H92H.wrapper-2a6GCs {
     margin-left: 64px;
     margin-right: 24px;
-    padding-top: 6px !important;
-    padding-left: 8px !important;
-    padding-bottom: 6px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    padding-left: 14px !important;
 }
   
 .avatar-1BDn8e {
@@ -473,10 +476,12 @@ textarea,
 }
   
 .repliedMessage-VokQwo:before {
-    transform: translateX(42px); 
+    transform: translateX(-11px); 
+    width: 34px;
 }
-  
-.replyAvatar-1K9Wmr,
-.repliedMessage-VokQwo > .replyBadge-r1su3o {
-    margin-left: 42px; 
+
+.message-2qnXI6::after {
+    margin-left: -69px;
+    margin-top: 6px;
+    margin-bottom: 7px;
 }
