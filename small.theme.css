@@ -185,12 +185,6 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
 .cozy-3raOZG .timestamp-3ZCmNB.alt-1uNpEt {
     color: rgb(255, 255, 255); 
 }
-
-.container-2fRDfG {
-    background-color: transparent;
-    border-radius: var(--textarea-radius) var(--textarea-radius) 0 0;
-    border-bottom: 1px solid var(--background-modifier-accent); 
-}
   
 .repliedMessage-VokQwo:before {
     transform: translateX(-11px); 
@@ -214,6 +208,66 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
 .icon-3ZFEtL {
     margin-left: 4px;
     margin-right: 4px;
+}
+
+.channelTextArea-rNsIhG {
+    margin: 0px;
+    height: 0px;
+    bottom: 64px;
+}
+
+.attachedBars-tZDmyV {
+    height: 0;
+    transform: translateY(-38px); 
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.replyBar-1YLQ2F {
+    border-radius: 8px;
+}
+
+.scrollableContainer-2NUZem.webkit-HjD9Er {
+    /* bottom: 64px; */
+
+    position: relative; 
+
+    border-radius: 8px;
+
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.scrollerSpacer-avRLaA {
+    margin-bottom: 64px;
+}
+
+.autocomplete-1vrmpx {
+    margin-bottom: 64px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.drawerSizingWrapper-17Mss4 {
+    bottom: 64px;
+    margin-right: 24px;
+}
+
+.typing-2GQL18 {
+    margin-bottom: 68px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 4px;
+
+    background: #40444B;
+}
+
+.channelTextAreaUpload-3t7EIx {
+    bottom: -64px;
+    
+    margin-left: -24px;
+    
+    width: 525px;
 }
 
 /* */
