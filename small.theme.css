@@ -8,6 +8,24 @@
 /* From DevilBro's BasicBackground Theme (ICONS)*/
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 
+:root {
+    --main-color: linear-gradient(45deg, rgb(0, 200, 255),rgb(0, 182, 245), rgb(0, 90, 244));
+    --main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    --channel-unread: rgb(0, 200, 255);
+	--channel-normal:  rgba(255,255,255,0.4);
+	--channel-selected: rgb(255, 255, 255); 
+	--channel-muted: rgba(255,255,255,0.1);
+
+    --left-sidebar-width: 220px;
+    --left-sidebar-selected: rgb(255, 255, 255);
+
+    --right-sidebar-width: 220px;
+
+    --window-spacing: 20px;
+    --widow-border-radius: 8px;
+}
+
 body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     background: transparent;
     background-color: transparent;
@@ -19,15 +37,18 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
 }
 
 .platform-win .winButton-iRh8-Z {
-    position: relative;
-    top: calc(var(--TB-position-top, 0px) + 18px);
-    right: var(--TB-position-right, 0px);
-    height: var(--TB-height, 48px);
+    top: calc(var(--TB-position-top) + 20px);
+    right: var(--TB-position-right, var(--window-spacing));
+    height: var(--TB-width, 48px);
     width: var(--TB-width, 40px);
 }
 
 .platform-win .winButton-iRh8-Z:not(.winButtonClose-1HsbF-):hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.platform-win .winButton-iRh8-Z.winButtonClose-1HsbF- {
+    border-radius: 0px var(--widow-border-radius) 0px 0px;
 }
 
 .platform-win .container-1r6BKw {
@@ -46,29 +67,32 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* */
-
-/* NITRO */
-
-[href="/store"], [aria-label="Send a gift"] {
-    display: none;
-}
-
-/* */
-
 .wrapper-3NnKdC, .tree-2wKJdG, .none-2Eo-qx {
     background-color: transparent;
     color: transparent;
     background: transparent;
 }
 
+.typeWindows-1za-n7 {
+    height: 0px;
+    margin: 0px;
+    margin-top: var(--window-spacing);
+}
+
 .base-3dtUhz {
-    border-radius: 8px;
+    border-radius: var(--widow-border-radius);
+    margin-bottom: var(--window-spacing);
+    margin-right: var(--window-spacing);
 }
 
 .sidebar-2K8pFh {
-    width: 220px;
+    width: var(--left-sidebar-width);
     background-color: rgb(0, 0, 0, 0);
+}
+
+.layout-2DM8Md {
+    width: calc(var(--left-sidebar-width) - 16px);
+    border-radius: 0px;
 }
 
 [data-list-id="guildsnav"], .tree-2wKJdG {
@@ -87,7 +111,15 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     margin-bottom: 2px;
 }
 
-/* MESSAGES FROM WEARY */
+/* NITRO */
+
+[href="/store"], [aria-label="Send a gift"] {
+    display: none;
+}
+
+/* */
+
+/* MESSAGES */
 
 .replying-1x3H0T::before {
     background: var(--main-color);
@@ -169,6 +201,193 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     margin-left: -69px;
     margin-top: 6px;
     margin-bottom: 7px;
+}
+
+.embedWrapper-lXpS3L {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.wrapper-129saQ {
+    border-radius: 4px;
+}
+
+.icon-3ZFEtL {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* */
+
+/* Server banners */
+
+.bannerImage-3KhIJ6 {
+    background-size: 100% 100%;
+    width: var(--left-sidebar-width);
+}
+
+.bannerVisible-2ZE_qG {
+    margin-bottom: 50px;
+}
+
+.container-1taM1r {
+    margin-top: 50px;
+}
+
+.header-2V-4Sw {
+    margin-top: -50px;
+}
+
+/* */
+
+/* Server sidebar */
+
+.containerDefault-3tr_sE {
+    margin-left: 2px;
+}
+
+.unread-2lAfLh {
+    display: none;
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+  .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+    background-color: rgb(20, 20, 20); 
+}
+
+.wrapper-2jXpOf.modeUnread-1qO3K1 .content-1x5b-n .mainContent-u_9PKf .name-23GUGE {
+    color: var(--channel-unread);
+    text-shadow: 0 0 3px;
+}
+.wrapper-2jXpOf.modeUnread-1qO3K1 .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz {
+    color: var(--channel-unread);
+    filter: drop-shadow(0 0 3px);
+    opacity: 1;
+}
+
+.content-1x5b-n .icon-1DeIlz {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    color: var(--channel-normal);
+    opacity: 1;
+    transition: all 0.15s ease-in-out;
+}
+
+.content-1x5b-n .name-23GUGE {
+    color: var(--channel-normal);
+    transition: all 0.15s ease-in-out;
+}
+
+.wrapper-2jXpOf.modeLocked-25wLHj .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz,
+.wrapper-2jXpOf.modeLocked-25wLHj .content-1x5b-n .mainContent-u_9PKf .channelName-2YrOjO,
+.wrapper-2jXpOf.modeMuted-onO3r- .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz,
+.wrapper-2jXpOf.modeMuted-onO3r- .content-1x5b-n .mainContent-u_9PKf .name-23GUGE {
+  color: var(--channel-muted);
+}
+
+.wrapper-2jXpOf.modeUnread-1qO3K1:hover .content-1x5b-n .mainContent-u_9PKf .name-23GUGE {
+    color: var(--channel-selected);
+}
+.wrapper-2jXpOf.modeUnread-1qO3K1:hover .content-1x5b-n .mainContent-u_9PKf .icon-1DeIlz {
+    color: var(--channel-selected);
+}
+
+.containerDefault--pIXnN .wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n .icon-1DeIlz,
+.containerDefault--pIXnN .wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n .name-23GUGE {
+  color: var(--channel-selected);
+}
+.containerDefault--pIXnN .wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n .iconLive-AtZKgD {
+  color: var(--channel-selected) !important;
+}
+
+.membersWrap-2h-GB4 {
+    width: var(--right-sidebar-width);
+}
+
+.members-1998pB {
+    width: 100%;
+    left: 2px;
+}
+
+/* */
+
+
+/* Friends siderbar */
+
+.channel-2QD9_O {
+    margin: 0px;
+}
+
+.headerText-2F0828 {
+    margin-left: -8px;
+}
+
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {
+    margin-left: 8px;
+}
+
+.scroller-1JbKMe::-webkit-scrollbar {
+    display: none;
+}
+/* */
+
+
+/* Settings left sidebar */
+
+.sidebarRegionScroller-3MXcoP, .sidebarRegion-VFTUkN, .standardSidebarView-3F1I7i, .layer-3QrUeG {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+}
+
+.sidebarRegion-VFTUkN {
+    margin-bottom: var(--window-spacing);
+}
+
+.sidebarRegionScroller-3MXcoP::-webkit-scrollbar {
+    background-color: #36393F;
+}
+
+.sidebar-CFHs9e {
+    padding: 0px;
+    margin-right: 100px;
+}
+
+.side-8zPYf6 {
+    border-radius: 8px 0px 0px 8px;
+    background-color: #36393F;
+    width: 350px;
+}
+
+.header-2RyJ0Y {
+    margin-top: 8px;
+}
+
+/* */
+
+/* Settings right sidebar */
+
+.contentRegion-3nDuYy, .contentTransitionWrap-3hqOEW, .contentRegionScroller-26nc1e {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+}
+
+.contentRegion-3nDuYy {
+    margin-bottom: var(--window-spacing);
+}
+
+.contentColumn-2hrIYH {
+    background-color: #36393F;
+    border-radius: 0px 8px 8px 0px;
+
+    max-width: 779px;
+}
+
+.toolsContainer-1edPuj {
+    padding: 0px;
+    padding-top: 16px;
+    right: 64px;
 }
 
 /* */
