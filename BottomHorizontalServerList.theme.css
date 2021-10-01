@@ -34,12 +34,13 @@
 
 #app-mount .guilds-1SWlCJ {
   transform-origin: top left;
-  transform: translateY(49.5%) rotate(-90deg);
-  
+  transform: translateY(50.25%) rotate(-90deg);
   height: 100vw !important;
 
   width: var(--server-container);
   top: var(--server-container);
+
+  margin-left: -8px;
   
   bottom: unset;
   position: absolute !important;
