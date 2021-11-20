@@ -123,6 +123,12 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     right: 2px;
 }
 
+.container-2wlB3z {
+    background: transparent;
+    background-color: transparent;
+    color: transparent;
+}
+
 .member-3-YXUe {
     margin-bottom: 2px;
 }
@@ -485,7 +491,13 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     border-radius: var(--friends-list-selected-radius);
 }
 
+.container-1D34oG {
+    background-color: var(--background) !important;
+}
 
+.nowPlayingColumn-2sl4cE, .container-lRFx4q {
+    background: transparent;
+}
 
 /* */
 
@@ -579,6 +591,10 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     display: none;
 }
 
+.wrapper-3vR61M {
+    display: none;
+}
+
 /* */
 
 /* CALL */
@@ -591,4 +607,20 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     display: none;
 }
 
+/* */
+
+
+/* Discover */
+
+.pageWrapper-1PgVDX {
+    background-color: var(--background) !important;
+}
+
+.children-gzQq2t {
+    margin-right: 32px;
+}
+
+.scroller-3Vjo4T {
+    background-color: var(--background) !important;
+}
 /* */
