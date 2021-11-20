@@ -511,7 +511,7 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x {
     margin-right: 100px;
 }
 
-.side-8zPYf6 {
+.side-8zPYf6:not(.searchHeaderTabList-2aPqS1) {
     border-radius: 8px 0px 0px 8px;
     background-color: #36393F;
     width: 350px;
