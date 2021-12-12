@@ -1,0 +1,35 @@
+/**
+ * @name Full Transparent
+ * @description fully transparent background & simple (White)
+ * @author Etho
+ * @version 1
+*/
+
+body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x, .container-2lgZY8, .wrapper-3NnKdC.guilds-1SWlCJ,
+    .tree-2wKJdG, .scroller-1Bvpku, .expandedFolderBackground-3ZDF05, .sidebar-2K8pFh, .privateChannels-1nO12o,
+    .scroller-1JbKMe, .panels-j1Uci_, .chat-3bRxxu, .title-3qD0b-.container-1r6BKw.themed-ANHk51, .members-1998pB, 
+    .channelTextArea-rNsIhGm, .container-3w7J-x, .membersWrap-2h-GB4, .container-2wlB3z, .nowPlayingColumn-2sl4cE, 
+    .container-lRFx4q, .wrapper-3vR61M, .wrapper-1F5TKx, .contents-1R-xLu, .attachmentContainer-2BK1nK, .layer-3QrUeG,
+    .standardSidebarView-3F1I7i, .sidebarRegion-VFTUkN, .sidebarRegionScroller-3MXcoP, .contentRegion-3nDuYy,
+    .contentTransitionWrap-3hqOEW, .contentRegionScroller-26nc1e {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.member-3-YXUe, .content-3YMskv, .container-1D34oG, .container-1r6BKw {
+    background: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.platform-win .wordmarkWindows-1v0lYD, .children-19S4PO::after, [data-list-item-id*="nitro"],
+    [data-list-item-id*="snowsgiving"], .form-2fGMdU::before {
+    display: none;
+}
+
+.content-3QAtGj, .icon-iDUzSK, .icon-22AiRD, .activityText-yGKsKm, .membersGroup-v9BXpm, .headerText-2F0828, .messageContent-2qWWxC, 
+    .colorStandard-2KCXvj, .item-PXvHYJ, .header-2RyJ0Y, .avatar-3uk_u9 {
+    color: white !important;
+}
+
+.mainContent-u_9PKf > div {
+    color: rgba(255, 255, 255, 0.65);
+}
