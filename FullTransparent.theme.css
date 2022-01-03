@@ -5,6 +5,16 @@
  * @version 1
 */
 
+:root {
+    --left-sidebar-width: 225px;
+
+    --text-color: rgb(255, 255, 255);
+    --media-color: rgb(0, 200, 255);
+
+    
+    --background-color: rgba(0, 0, 0, 0);
+}
+
 body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x, .container-2lgZY8, .wrapper-3NnKdC.guilds-1SWlCJ,
     .tree-2wKJdG, .scroller-1Bvpku, .expandedFolderBackground-3ZDF05, .sidebar-2K8pFh, .privateChannels-1nO12o,
     .scroller-1JbKMe, .panels-j1Uci_, .chat-3bRxxu, .title-3qD0b-.container-1r6BKw.themed-ANHk51, .members-1998pB, 
@@ -12,12 +22,12 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x, .container-2lgZY8,
     .container-lRFx4q, .wrapper-3vR61M, .wrapper-1F5TKx, .contents-1R-xLu, .attachmentContainer-2BK1nK, .layer-3QrUeG,
     .standardSidebarView-3F1I7i, .sidebarRegion-VFTUkN, .sidebarRegionScroller-3MXcoP, .contentRegion-3nDuYy,
     .contentTransitionWrap-3hqOEW, .contentRegionScroller-26nc1e {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--background-color);
 }
 
 .member-3-YXUe, .content-3YMskv, .container-1D34oG, .container-1r6BKw {
-    background: rgba(0, 0, 0, 0) !important;
-    background-color: rgba(0, 0, 0, 0);
+    background: var(--background-color) !important;
+    background-color: var(--background-color);
 }
 
 .platform-win .wordmarkWindows-1v0lYD, .children-19S4PO::after, [data-list-item-id*="nitro"],
@@ -27,9 +37,26 @@ body, .appMount-3lHmkl, .app-1q1i1E, .app-2rEoOp, .bg-h5JY_x, .container-2lgZY8,
 
 .content-3QAtGj, .icon-iDUzSK, .icon-22AiRD, .activityText-yGKsKm, .membersGroup-v9BXpm, .headerText-2F0828, .messageContent-2qWWxC, 
     .colorStandard-2KCXvj, .item-PXvHYJ, .header-2RyJ0Y, .avatar-3uk_u9 {
-    color: white !important;
+    color: var(--text-color) !important;
 }
 
 .mainContent-u_9PKf > div {
     color: rgba(255, 255, 255, 0.65);
+}
+
+.sidebar-2K8pFh {
+    width: var(--left-sidebar-width);
+}
+
+.scroller-1Bvpku {
+    transform: scale(0.95, 0.95);
+    margin-top: -24px;
+}
+
+.mediaBarProgress-1xaPtl, .mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl::before, .mediaBarProgress-1xaPtl::after {
+    background: var(--media-color);
+}
+
+.bubble-3qRl2J {
+    background: var(--media-color);
 }
